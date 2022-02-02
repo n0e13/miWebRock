@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="center">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">About</a></li>
@@ -20,8 +20,7 @@
         </nav>
     </header>
     <main>
-        <h1>Bienvenidos a mi landing de Rock</h1>
-        <p>Aquí habrá más cositas...</p>
+        <h1 class="center">Bienvenidos a mi landing de Rock</h1>
         <section>
             <h2>Rock news</h2>
             <article>
@@ -86,6 +85,41 @@
                 </tr>
               </table>
         </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <form action="">
+            <h5>Tus datos:</h5>
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" placeholder="Ingresa tu nombre" maxlength="18">
+
+            <label for="lname">Apellidos:</label>
+            <input type="text" id="lname" name="lname" placeholder="Ingresa tus apellidos" maxlength="20">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tus email" required>
+
+            <h5>Género</h5>
+            <input type="radio" id="glam" name="fav_genre" value="Glam Rock">
+            <label for="glam">Glam Rock</label>
+
+            <input type="radio" id="glam" name="fav_genre" value="Grunge">
+            <label for="grunge">Grunge</label>
+
+            <input type="radio" id="glam" name="fav_genre" value="Hard Rock">
+            <label for="Hard">Hard Rock</label>
+
+            <h5>Observaciones</h5>
+            <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+            <input type="checkbox" id="condiciones" name="condiciones" value="condiciones">
+            <label for="condiciones">Acepto las condiciones de uso</label>
+
+            <input type="checkbox" id="publicidad" name="publicidad" value="publicidad">
+            <label for="condiciones">Permito que me envíen publicidad</label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
     </main>
     <footer>@Copyright n0e</footer>
 </body>

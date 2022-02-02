@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-color: #F0F3F5;
 }
@@ -6,6 +10,43 @@ th, td {
     border: 1px dashed #7B2D26;
 }
 
+h1 {
+    border: 1px solid #19535F;
+    padding: 25px 50px;
+    background-color: #7B2D26;
+    color: #F0F3F5;
+}
+
+h2 {
+    border: 1px solid #19535F;
+    padding: 10px;
+    background-color: #0b7475;
+    color: #F0F3F5;
+}
+
+input[type=text], input[type=email], input[type=submit] {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 12px 0px;
+}
+
+input[type=submit] {
+    background-color: #19535F;
+    color: #F0F3F5;
+}
+
+input[type=submit]:hover {
+    background-color: #0b7475;
+    cursor: pointer;
+}
+
+main {
+    margin-left: 8px;
+}
+
+form > h5 {
+    margin: 8px 0px 8px;
+}
 /*Selector de clase*/
 .song {
     background-color: #D7C9AA;
@@ -26,6 +67,18 @@ th, td {
     text-align: center;
 }
 
+nav > ul > li { /* Quita el punto y pone en línea el menú */
+    list-style: none;
+    display: inline;
+}
+
+nav > ul > li > a { /* Quita el subrayado de los enlaces del menú*/
+    text-decoration: none;
+    color: #19535f;
+}
+
+
+
 /*Selector de ID*/
 #songs {
     width: 100%;
@@ -34,4 +87,3 @@ th, td {
 #rock-img-header {
     width: 30%;
 }
-
